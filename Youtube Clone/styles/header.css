@@ -53,12 +53,7 @@ input.search-bar {
     box-shadow: inset 1px 1px 3px rgb(0, 0, 0, 0.25);
 }
 
-input.search-bar::placeholder {}
-
 button.search-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 40px;
     width: 66px;
     background-color: rgb(235, 235, 235);
@@ -73,10 +68,35 @@ img.search-icon {
     height: 25px;
 }
 
+button.search-button,
 button.voice-button {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+button.search-button div.tooltip,
+button.voice-button div.tooltip {
+    background-color: gray;
+    color: white;
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -25px;
+    opacity: 0;
+    transition: opacity 150ms;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+button.search-button:hover div.tooltip,
+button.voice-button:hover div.tooltip {
+    opacity: 1;
+}
+
+button.voice-button {
     height: 40px;
     width: 40px;
     border-radius: 20px;
@@ -111,6 +131,25 @@ div.notifications {
 
 img.notifications-icon {
     height: 24px;
+}
+
+div.notification-count {
+    position: absolute;
+    top: -2px;
+    right: -4px;
+
+    background-color: rgb(201, 3, 3);
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1.2px;
+    border-color: white;
 }
 
 img.my-channel-icon {
