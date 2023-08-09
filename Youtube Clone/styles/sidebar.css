@@ -1,4 +1,4 @@
-div.sidebar {
+nav.sidebar {
     position: fixed;
     background-color: white;
     top: 55px;
@@ -28,6 +28,5 @@ div.sidebar-link img {
 }
 
 div.sidebar-link div{
-    font-family: Roboto, Arial;
     font-size: 10px;
 }

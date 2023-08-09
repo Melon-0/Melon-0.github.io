@@ -1,4 +1,4 @@
-div.header {
+header.header {
     height: 55px;
     display: flex;
     flex-direction: row;
@@ -42,13 +42,10 @@ input.search-bar {
     flex: 1;
     height: 36px;
     font-size: 16px;
-    font-family: Roboto, Arial;
     font-size: 16px;
     width: 0px;
     padding-left: 10px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: gray;
+    border: 1px solid gray;
     border-radius: 2px;
     box-shadow: inset 1px 1px 3px rgb(0, 0, 0, 0.25);
 }
@@ -142,7 +139,6 @@ div.notification-count {
     right: -4px;
 
     background-color: rgb(201, 3, 3);
-    font-family: Roboto, Arial;
     font-size: 11px;
     color: white;
     padding-left: 4px;

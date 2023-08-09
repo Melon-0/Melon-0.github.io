@@ -15,17 +15,19 @@ div.video-time {
     bottom: 8px;
     right: 5px;
 
-    font-family: Roboto, Arial;
     font-size: 14px;
     font-weight: 500;
     padding: 4px;
 }
 
-p.video-title {
-    margin-top: 0;
+a.video-title {
+    display: block;
+    margin-top: 0px;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 p.video-author,
@@ -48,9 +50,26 @@ div.thumbnail-div {
     position: relative;
 }
 
-div.video-grid {
+section.video-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 30px;
+}
+
+@media (max-width: 800px) {
+    section.video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1599px) {
+    section.video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1600px) {
+    section.video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
