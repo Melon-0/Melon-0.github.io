@@ -69,7 +69,8 @@ img.search-icon {
 }
 
 button.search-button,
-button.voice-button {
+button.voice-button,
+div.upload-icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +78,8 @@ button.voice-button {
 }
 
 button.search-button div.tooltip,
-button.voice-button div.tooltip {
+button.voice-button div.tooltip,
+div.upload-icon-container div.tooltip {
     background-color: gray;
     color: white;
     font-size: 12px;
@@ -92,7 +94,8 @@ button.voice-button div.tooltip {
 }
 
 button.search-button:hover div.tooltip,
-button.voice-button:hover div.tooltip {
+button.voice-button:hover div.tooltip,
+div.upload-icon-container:hover div.tooltip {
     opacity: 1;
 }
 
